@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block contenu %}
+<div class="observation container">
+    <h2>I'd love to hear what you think of my work!</h2>
+    <p>
+        I cordially invite you to share your opinion on my website.
+        Your feedback is extremely valuable to me, as it
+        enables me
+        to continually improve my work and better meet your expectations.
+    </p>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        <div>
+            <input type="text" name="fullname" placeholder="Rakoto Paul">
+        </div>
+
+        <div>
+            <input type="text" name="email" placeholder="email@email.com">
+        </div>
+
+        <div>
+            <textarea name="observation" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="btn secondary">Send</button>
+        </div>
+    </form>
+
+</div>
+{% endblock %}

@@ -301,3 +301,26 @@ h3 {
     margin-top: 20px;
     text-align: center;
 }
+
+.observation input {
+    width: 600px;
+    height: 50px;
+    margin: 15px 0;
+    padding: 0 10px;
+}
+
+.observation textarea {
+    max-width: 600px;
+    min-width: 600px;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.observation p {
+    width: 600px;
+    margin: auto;
+}
+
+.observation form {
+    text-align: center;
+}
