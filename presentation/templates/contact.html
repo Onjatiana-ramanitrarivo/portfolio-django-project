@@ -17,21 +17,25 @@
                 libero
                 sint atque asperiores nostrum. Beatae deserunt nulla vitae error nihil.
             </p>
-            <form action="">
+            <form action="" method="POST">
+                {% csrf_token %}
+
                 <div>
-                    <input type="text" placeholder="Name">
+                    <input type="text" name="fullname" placeholder="Rakoto Paul">
+                </div>
+
+                <div>
+                    <input type="text" name="email" placeholder="email@email.com">
                 </div>
                 <div>
-                    <input type="text" placeholder="Object">
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+
+                <div>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div>
-                    <input type="text" placeholder="email@email.com">
-                </div>
-                <div>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <button class="btn secondary">Send</button>
+                    <button type="submit" class="btn secondary">Send</button>
                 </div>
             </form>
         </div>
