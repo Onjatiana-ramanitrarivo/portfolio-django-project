@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block contenu %}
+<div class="contact container">
+    <h2>Contact</h2>
+    <div class="contact-section">
+        <div class="right">
+            <img src="{% static 'onjatiana.jpg' %}" alt="onjatiana.jpg">
+        </div>
+
+
+        <div class="left">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea facilis ut magnam veritatis distinctio
+                libero
+                sint atque asperiores nostrum. Beatae deserunt nulla vitae error nihil.
+            </p>
+            <form action="">
+                <div>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div>
+                    <input type="text" placeholder="Object">
+                </div>
+                <div>
+                    <input type="text" placeholder="email@email.com">
+                </div>
+                <div>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <button class="btn secondary">Send</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

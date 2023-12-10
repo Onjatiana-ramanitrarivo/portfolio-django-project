@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'app.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg-light">
+        <header class="header container">
+            <div class="logo">
+                <a href="{% url 'home' %}">Onjatiana<span>.</span></a>
+            </div>
+            <nav class="menu">
+                <a href="{% url 'home' %}" class="menu-item">home</a>
+                <a href="{% url 'home' %}#about" class="menu-item">about</a>
+                <a href="{% url 'home' %}#portfolio" class="menu-item">portfolio</a>
+                <a href="{% url 'contact' %}" class="menu-item">contact</a>
+            </nav>
+        </header>
+    </div>
+    {% block contenu %}
+
+    {% endblock %}
+
+</body>
+
+</html>

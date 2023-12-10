@@ -10,3 +10,11 @@ def accueil(request):
     }
 
     return HttpResponse(template.render(context,request))
+
+def contact(request):
+    template = loader.get_template('contact.html')
+    context = {
+        "title":"contact",
+    }
+
+    return HttpResponse(template.render(context,request))

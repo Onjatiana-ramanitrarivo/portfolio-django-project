@@ -1,40 +1,106 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'app.css' %}">
-    <title>Page d'accueil</title>
-</head>
-
-<body>
-    <div class="bg-light">
-        <header class="header container">
-            <div class="logo">Onjatiana<span>.</span> </div>
-            <nav class="menu">
-                <a href="#" class="menu-item">home</a>
-                <a href="#" class="menu-item">portfolio</a>
-                <a href="#" class="menu-item">contact</a>
-            </nav>
-        </header>
+{% block contenu %}
+<div class="banner container">
+    <div>
+        <p class="myName">
+            Hi, I'm Onjatiana
+        </p>
+        <p class="myDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quod non ipsum nam cupiditate
+            architecto
+            necessitatibus quae optio blanditiis dignissimos reiciendis in adipisci delectus, at id magnam numquam
+            quaerat distinctio!
+        </p>
+        <a href="{% url 'contact' %}">
+            <button class="btn primary">contact me</button>
+        </a>
     </div>
+</div>
 
-    <div class="banner container">
-        <div>
-            <p class="myName">
-                Hi, I'm Onjatiana
+<div id="about" class="about container">
+    <h2 class="title">About <span>me</span> </h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laboriosam ab exercitationem provident quas,
+        similique illo sit, nisi, nemo pariatur fuga aliquam quidem itaque labore voluptate at voluptatibus!
+        Distinctio, quidem?
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo sit doloremque cupiditate aperiam minima
+        repellendus delectus aut, numquam quia praesentium. Dolore totam earum harum id, et a amet deserunt nihil.
+    </p>
+</div>
+
+<div id="portfolio" class="portfolio container">
+    <h2>Portfolio</h2>
+    <div class="real">
+        <div class="real-item">
+            <h3 class="real-item-title">Aody application</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum eveniet laboriosam neque similique
+                harum quaerat voluptas tempore facere. Cupiditate.
             </p>
-            <p class="myDescription">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quod non ipsum nam cupiditate
-                architecto
-                necessitatibus quae optio blanditiis dignissimos reiciendis in adipisci delectus, at id magnam numquam
-                quaerat distinctio!
+            <p>
+                .Net | WPF | Postgres | Git
             </p>
-            <button class="btn">contact me</button>
+        </div>
+        <div class="real-item">
+            <h3 class="real-item-title">Lanzocode application</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum eveniet laboriosam neque similique
+                harum quaerat voluptas tempore facere. Cupiditate.
+            </p>
+            <p>
+                React | Express | MongoDB | Node.js | Git
+            </p>
+        </div>
+        <div class="real-item">
+            <h3 class="real-item-title">Mitafa application</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum eveniet laboriosam neque similique
+                harum quaerat voluptas tempore facere. Cupiditate.
+            </p>
+            <p>
+                Spring | React | Postgres | Git
+            </p>
+        </div>
+        <div class="real-item">
+            <h3 class="real-item-title">Mitafa application</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum eveniet laboriosam neque similique
+                harum quaerat voluptas tempore facere. Cupiditate.
+            </p>
+            <p>
+                Spring | React | Postgres | Git
+            </p>
+        </div>
+        <div class="real-item">
+            <h3 class="real-item-title">Mitafa application</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum eveniet laboriosam neque similique
+                harum quaerat voluptas tempore facere. Cupiditate.
+            </p>
+            <p>
+                Spring | React | Postgres | Git
+            </p>
+        </div>
+        <div class="real-item">
+            <h3 class="real-item-title">Mitafa application</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum eveniet laboriosam neque similique
+                harum quaerat voluptas tempore facere. Cupiditate.
+            </p>
+            <p>
+                Spring | React | Postgres | Git
+            </p>
         </div>
     </div>
-</body>
+    <div class="real-seemore-section">
+        <button class="btn primary">see more</button>
+    </div>
+</div>
 
-</html>
+<div class="footer">
+    copyright 2023 Onjatiana Ramanitrarivo
+</div>
+{% endblock %}
